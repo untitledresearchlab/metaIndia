@@ -16,7 +16,7 @@ GPIO_PIN = 17
 # Set up the GPIO pin as an input with pull-up resistor
 GPIO.setup(GPIO_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
-# Create an OSC client to send commands to your OSC-enabled device
+# Create an OSC client to send commands to your OSC-enabled device. Change IP Address accordingly. 
 osc_client = udp_client.SimpleUDPClient("192.168.1.41", 8000)  # Replace with >
 
 # Define a function to handle GPIO events
